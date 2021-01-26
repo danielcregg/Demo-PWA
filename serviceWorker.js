@@ -1,5 +1,5 @@
 var cacheName = 'demo-app';
-var filesToCache = ['/'];
+var filesToCache = ['/index.html'];
 
 self.addEventListener("activate", (e) => {
     console.log("[Service Worker] Activate")
