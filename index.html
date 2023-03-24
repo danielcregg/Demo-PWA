@@ -5,9 +5,23 @@
     <title>PWA</title>
     
     <link rel="manifest" href="./manifest.webmanifest">
-    
-    <script src="app.js"></script>
-    
+
+ <!--   <script src="app.js"></script>-->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker
+            .register('./serviceWorker.js') //file location
+            .then(()=>{
+                console.log("Service worker register successfully")
+            })
+            .catch((err)=>{
+                console.log("Something went wrong",err)
+            })
+        } else {
+            console.log("Service worker is not available")
+        }
+    </script>
+
 </head>
 
 <body>
