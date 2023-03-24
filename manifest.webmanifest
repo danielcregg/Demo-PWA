@@ -1,5 +1,4 @@
 {
-    "background_color": "purple",
     "description": "PWA Demo Page.",
     "display": "standalone",
     "icons": [
