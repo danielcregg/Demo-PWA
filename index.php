@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="manifest" href="./manifest.webmanifest">
+        <title>PWA App</title>
+		<link rel="manifest" href="./manifest.webmanifest">
         <script>
             if ("serviceWorker" in navigator) {
                 navigator.serviceWorker.register('./serviceWorker.js');
