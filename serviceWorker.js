@@ -1,5 +1,5 @@
-var cacheName = 'demo-app';
-var filesToCache = ['/index.html'];
+var cacheName = 'pwa-app-cache';
+var filesToCache = ['/index.php'];
 
 self.addEventListener("activate", (e) => {
     console.log("[Service Worker] Activate")
