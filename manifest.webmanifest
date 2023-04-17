@@ -4,9 +4,14 @@
     "icons": [
         {
             "src": "app-icon-192x192.png",
-            "sizes": "192x192",
             "type": "image/png",
+            "sizes": "192x192",
             "purpose": "maskable any"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
     "name": "PWA Demo",
