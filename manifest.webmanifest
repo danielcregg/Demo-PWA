@@ -11,5 +11,7 @@
     ],
     "name": "PWA Demo",
     "short_name": "PWADemo",
-    "start_url": "./"
+    "start_url": "./",
+    "background_color": "#FFF",
+    "theme_color": "#FFF"
 }
