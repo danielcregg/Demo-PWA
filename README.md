@@ -7,6 +7,8 @@ This code meets all the minimum PWA requirements.
 
 Bash Commands  
 # MAKE SURE YOUR WEBSITE IS HTTPS FIRST !!!
+
+```console
 echo Enable pwa 
 cd /var/www/html &&
 sudo wget https://github.com/danielcregg/pwa-template/archive/refs/heads/master.zip -P /var/www/html/ &&
@@ -16,3 +18,4 @@ sudo mv pwa-template-master/!(index.*|*.md) /var/www/html/ &&
 sudo rm -rf master.zip pwa-template-master/ &&
 sudo sed -i 's|\s*</head>|\t\t<link rel="manifest" href="./manifest.webmanifest">\n\t\t<script>\n\t\t\tif ("serviceWorker" in navigator) {\n\t\t\t\tnavigator.serviceWorker.register("./serviceWorker.js"); \n\t\t\t}\n\t\t</script>\n\t\t<meta name="viewport" content="width=device-width, initial-scale=1">\n\t\t<meta name="theme-color" content="#FFF"/>\n&|' /var/www/html/index.* &&
 printf "\nOpen an internet browser (e.g. Chrome) and go to \e[3;4;33mhttps://YOUR_DOMIAN_NAME\e[0m - You should see a PWA icon in the URL bar of your browser.\n"
+```
