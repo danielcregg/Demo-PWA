@@ -3,7 +3,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "app-icon-192x192.png",
+            "src": "/android-chrome-192x192.png",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "maskable any"
