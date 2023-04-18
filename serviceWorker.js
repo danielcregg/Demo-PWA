@@ -1,11 +1,11 @@
 var cacheName = 'pwa-app-cache';
 var filesToCache = ['/index.html'];
 
-self.addEventListener("activate", (e) => {
+function activateServiceWorker(e) {
     console.log("[Service Worker] Activate")
-})
+}
 
-self.addEventListener('install', function (e) {
+function installServiceWorker(e) {
     console.log('[ServiceWorker] Install');
     e.waitUntil(
         caches.open(cacheName).then(function (cache) {
@@ -13,12 +13,15 @@ self.addEventListener('install', function (e) {
             return cache.addAll(filesToCache);
         })
     );
-});
+}
 
-// this code shows add to home screen button in chrome
-self.addEventListener('fetch', (e) => {
+function fetchServiceWorker(e) {
     console.log(e.request.url);
     e.respondWith(
         caches.match(e.request).then((response) => response || fetch(e.request)),
     );
-});
+}
+
+self.addEventListener("activate", activateServiceWorker);
+self.addEventListener('install', installServiceWorker);
+self.addEventListener('fetch', fetchServiceWorker);
