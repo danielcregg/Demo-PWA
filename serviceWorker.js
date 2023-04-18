@@ -1,10 +1,13 @@
+// Define cache name and files to cache
 var cacheName = 'pwa-app-cache';
 var filesToCache = ['/index.html'];
 
+// Function to activate service worker
 function activateServiceWorker(e) {
     console.log("[Service Worker] Activate")
 }
 
+// Function to install service worker
 function installServiceWorker(e) {
     console.log('[ServiceWorker] Install');
     e.waitUntil(
@@ -15,6 +18,7 @@ function installServiceWorker(e) {
     );
 }
 
+// Function to fetch service worker
 function fetchServiceWorker(e) {
     console.log(e.request.url);
     e.respondWith(
@@ -22,6 +26,7 @@ function fetchServiceWorker(e) {
     );
 }
 
+// Add event listeners for service worker
 self.addEventListener("activate", activateServiceWorker);
 self.addEventListener('install', installServiceWorker);
 self.addEventListener('fetch', fetchServiceWorker);
