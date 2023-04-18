@@ -1,12 +1,21 @@
-PWA (Progressive Web App) is a web application that works in a similar way to a native application installed on a desktop or mobile device.  
-This code meets all the minimum PWA requirements.
+This repository contains a basic website (index.html) and some files which also make it a Progressive Web App (PWA). This PWA meets the minimum requirments. 
 
-1. HTTPS enabled - This is necessary to register a service worker. You can get free certs at https://certbot.eff.org/.  
-2. Manifest file - This is a JSON file that determines the behavior of the application after its installation. It contains things like the application name, icon paths and start URL.  
-3. Service Worker - This is a JavaScript file that is responsible for handling HTTPS requests and returning responses. Its purpose is to provide offline capabilities to the application.  
+Here is a link to the website/PWA:  
+https://danielcregg.github.io/pwa-template/
 
-Bash Commands  
-# MAKE SURE YOUR WEBSITE IS HTTPS FIRST !!!
+A PWA is a web app that works in a similar way to a normal desktop or mobile app installed on a desktop or mobile device.  
+
+# PLEASE NOTE: Before you attempt to enable PWA for your website, you must have HTTPS certs for your website!
+You can get free certs at https://certbot.eff.org/.  
+
+Important files in this repository:
+1. Manifest file - This is a JSON file that determines the behavior of the application after its installation. It contains things like the application name, icon paths and start URL.  
+2. Service Worker - This is a JavaScript file that is responsible for handling HTTPS requests and returning responses. Its purpose is to provide offline capabilities to the application.  
+
+To use this code first you will need a LAMP server with your website hosted in the following directory: /var/www/html   
+Next, you will need to SSH into your server that is hosting your webpage.  
+Finally, copy paste and execute the following bash commands in the table below. Run all commands at once.
+Now go to your website and you will see it has become a PWA.
 
 ```console
 echo Enable pwa 
