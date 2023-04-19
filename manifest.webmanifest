@@ -1,5 +1,7 @@
 {
-    "description": "PWA Demo App",
+    "name": "PWA Demo App",
+    "short_name": "PWADemo",
+    "start_url": "./",
     "display": "standalone",
     "icons": [
         {
@@ -13,10 +15,5 @@
             "type": "image/png",
             "sizes": "512x512"
         }
-    ],
-    "name": "PWA Demo App",
-    "short_name": "PWADemo",
-    "start_url": "./",
-    "background_color": "#FFF",
-    "theme_color": "#FFF"
+    ]
 }
