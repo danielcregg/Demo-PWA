@@ -7,7 +7,7 @@ function installServiceWorker(e) {
     console.log("[Service Worker] Install");
     e.waitUntil(
         caches.open(cacheName).then(function (cache) {
-            console.log('[ServiceWorker] Caching app shell');
+            console.log('[Service Worker] Caching app shell');
             return cache.addAll(filesToCache);
         })
     );
