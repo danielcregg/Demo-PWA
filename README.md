@@ -12,13 +12,17 @@ Important files in this repository:
 1. Manifest file - This is a JSON file that determines the behavior of the application after its installation. It contains things like the application name, icon paths and start URL.  
 2. Service Worker - This is a JavaScript file that is responsible for handling HTTPS requests and returning responses. Its purpose is to provide offline capabilities to the application.  
 
-To use this code first you will need a LAMP server with your website hosted in the following directory: /var/www/html   
-Next, you will need to SSH into your server that is hosting your webpage.  
-Finally, copy paste and execute the following bash commands in the table below. Run all commands at once.
-Now go to your website and you will see it has become a PWA.
+To use this code you require:
+1. A LAMP server
+2. Your website hosted in: /var/www/html   
+3. Your website has security certs making it a HTTPS site  
+
+If all requirmetns are satified above:
+1. SSH into your LAMP server that is hosting your webpage.  
+2. Copy, paste and execute the following bash commands in the table below. Run all commands at once.
+3. Open your website in the browser. Use your domain name NOT your IP address. You will see if it is a PWA by the new icon in the URL bar.
 
 ```console
-echo Enable pwa 
 cd /var/www/html &&
 sudo wget https://github.com/danielcregg/pwa-template/archive/refs/heads/master.zip -P /var/www/html/ &&
 sudo apt install unzip &&
