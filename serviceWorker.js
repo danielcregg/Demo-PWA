@@ -1,6 +1,6 @@
 // Define cache name and files to cache
 var cacheName = 'pwa-app-cache';
-var filesToCache = ['/index.php'];
+var filesToCache = ["/"];
 
 // Function to install service worker
 function installServiceWorker(e) {
