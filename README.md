@@ -22,7 +22,7 @@ If all requirmetns are satified above:
 2. Copy, paste and execute the following bash commands in the table below. Run all commands at once.
 3. Open your website in the browser. Use your domain name NOT your IP address. You will see if it is a PWA by the new icon in the URL bar.
 
-```console
+```bash
 cd /var/www/html &&
 sudo wget https://github.com/danielcregg/pwa-template/archive/refs/heads/master.zip -P /var/www/html/ &&
 sudo apt install unzip &&
