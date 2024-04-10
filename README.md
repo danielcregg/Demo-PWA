@@ -1,7 +1,8 @@
 This repository contains a basic website (index.html) and some files which also make it a Progressive Web App (PWA). This PWA meets the minimum requirments. 
 
 Here is a link to the website/PWA:  
-https://danielcregg.github.io/pwa-template/
+
+**<a href="https://danielcregg.github.io/pwa-template/" target="_blank">https://danielcregg.github.io/pwa-template/</a>** 
 
 A PWA is a web app that works in a similar way to a normal desktop or mobile app installed on a desktop or mobile device.  
 
