@@ -2,6 +2,11 @@ This repository contains a basic website (index.html) and some files which also 
 
 Here is a link to the website/PWA:  
 
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">Link Text</a>
+
+
+
+
 https://danielcregg.github.io/pwa-template/  
 <a href="https://example.com" target="_blank">Link Text</a>  
 
